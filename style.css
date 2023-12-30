@@ -162,7 +162,7 @@ body {
     gap: 50px;
     flex-wrap: wrap;
 
-    background-image: url('media/mixer-1284507_1920.jpg');
+    background-image: url('media/miksher-dj-pult-makro-temnyy.jpg');
     background-color: rgba(0, 0, 0, 0.9);
     background-blend-mode: darken;
 }
@@ -198,10 +198,35 @@ body {
     width: 100vw;
 
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: darken;
+    background-size: cover;
+    position: relative;
+}
+
+#video {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    min-height: 95%;
+    opacity: 0.3;
+}
+
+#fade {
+    position: absolute;
+    width: 100%;
+    height: 95%;
+    box-shadow: inset 0px 0px 150px 100px rgba(0,0,0,1);
+    top: 0;
+    left: 0;
+    mix-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 #section-four h1 {
     font-size: clamp(24px, 10vw, 78px);
+    position: inherit;
+    z-index: 10;
 }
 
 #section-four .elfsight-app-6fb67076-2887-4e7a-8a70-7d21ebab18a4::after{
@@ -227,14 +252,17 @@ body {
 /* Footer */
 
 footer {
+    position: inherit;
     width: 100vw;
     background-color: black;
     border-top: solid red 0.5px;
     text-align: center;
     font-size: 16px;
     z-index: 15;
+    margin-top: 40px;
 }
 
 footer h5 {
-    margin: 5px;
+    padding: 5px;
+    margin: 0px;
 }
