@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;600&display=swap');
+
+
+body {
+    margin: 0;
+    background-color: black;
+    font-family: 'Exo', Arial, sans-serif;
+    color: white;
+  }
+
+  video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+  }
+
+
+
+  header {
+    background-color: #000000;
+    padding: 10px;
+    position: fixed;
+    width: calc(100% - 20px);
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    border-bottom: solid red 1px;
+    transition: ease-in-out 500ms;
+  }
+
+  /* Style for the links in the navbar */
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    transition: color 0.3s;
+    font-size: 18px;
+  }
+
+  /* Change link color on hover */
+  nav a:hover {
+    color: red;
+  }
+
+  /* Style for the logo */
+  .logo img {
+    width: 60px; /* Adjust the size of the logo as needed */
+    height: auto;
+    transition: ease-in-out 500ms;
+  }
+
+  /* Black Gradient */
+  #gradient {
+    position: absolute;
+    top: calc(100vh - 50vh);
+    z-index: 3;
+    width: 100vw;
+    height: 50vh;
+    background: linear-gradient(to top, black 10%, transparent 100%);
+  }
+
+  #cover {
+    position: absolute;
+    top: 0vh;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  #cover h1{
+    font-size: clamp(24px, 10vw, 78px);
+    margin-bottom: 20px;
+  }
+
+  #cover h3{
+    font-size: clamp(12px, 2vw, 24px);
+    font-weight: 100;
+    margin: 0px 20px;
+  }
+
+  #cover img{
+    width: 50px;
+  }
+
+
+
+
+
+
+/* Section 2 */
+
+#section-two {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#section-two h3{
+    font-size: clamp(12px, 2vw, 24px);
+    font-weight: 100;
+    z-index: 4;
+    margin: 0px 150px;
+}
+
+#spacer {
+    height: 300px;
+}
+
+#eqvid {
+    position: absolute;
+    top: 100vh;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+/* Text Adjustments */
+@media only screen and (max-width: 500px) {
+    #section-two h3{
+        font-size: clamp(12px, 2vw, 24px);
+        font-weight: 200;
+        z-index: 4;
+        margin: 0px 10px;
+    }
+}
+
+
+
+
+/* Section 3 */
+
+#section-three {
+    min-height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+
+    background-image: url('media/mixer-1284507_1920.jpg');
+    background-color: rgba(0, 0, 0, 0.9);
+    background-blend-mode: darken;
+}
+
+.card {
+    background-color: rgb(42, 42, 42);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(255, 0, 0, 0.5);
+    margin: 10px;
+    width: 325px;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card div {
+    padding: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: 225px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+
+
+/* Section 4 */
+
+#section-four {
+    min-height: 100vh;
+    width: 100vw;
+
+    text-align: center;
+}
+
+#section-four h1 {
+    font-size: clamp(24px, 10vw, 78px);
+}
+
+#section-four .elfsight-app-6fb67076-2887-4e7a-8a70-7d21ebab18a4::after{
+    margin-bottom: -30px;
+}
+
+#section-four .elfsight-app-6fb67076-2887-4e7a-8a70-7d21ebab18a4::after{
+    content: "";
+    display: block;
+    position: relative;
+    bottom: 40px;
+    left: 0px;
+    right: 0px;
+    height: 40px;
+    width: 100vw;
+    background-color: black;
+    z-index: 10;
+}
+
+
+
+
+/* Footer */
+
+footer {
+    width: 100vw;
+    background-color: black;
+    border-top: solid red 0.5px;
+    text-align: center;
+    font-size: 16px;
+    z-index: 15;
+}
+
+footer h5 {
+    margin: 5px;
+}
