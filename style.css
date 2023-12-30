@@ -7,6 +7,7 @@ body {
     background-color: black;
     font-family: 'Exo', Arial, sans-serif;
     color: white;
+    overflow-x: hidden;
   }
 
   video {
