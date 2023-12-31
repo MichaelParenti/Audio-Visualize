@@ -51,3 +51,10 @@ const videoSources = [
         }
     }, 1);
 
+    //Navigation Hamburger Menu
+    function toggleNav() {
+        var nav = document.querySelector('nav');
+        nav.classList.toggle('active');
+      }
+  
+

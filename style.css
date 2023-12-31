@@ -10,6 +10,43 @@ body {
     overflow-x: hidden;
   }
 
+
+
+
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    padding: 5px;
+    color: #fff;
+    font-size: 36px;
+  }
+
+  @media (max-width: 768px) {
+      .hamburger {
+        display: block;
+      }
+  
+      nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust this value based on your fixed header height */
+        left: 0;
+        right: 0;
+      }
+
+      nav.active {
+          display: flex;
+          background-color: black;
+          border: solid 1px red;
+          margin-top: 20px;
+          width: 99%;
+          text-align: left;
+      }
+  }
+
+
+
   video {
     object-fit: cover;
     width: 100vw;
@@ -89,7 +126,7 @@ body {
   }
 
   #cover h3{
-    font-size: clamp(12px, 2vw, 24px);
+    font-size: clamp(18px, 2vw, 24px);
     font-weight: 100;
     margin: 0px 20px;
   }
